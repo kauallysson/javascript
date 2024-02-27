@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeira vez com dom</title>
+    <style>
+        body{
+            background-color: rgba(84, 212, 170, 0.681);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Primeira vez usando/fazeno uso do <strong>DOM</strong></h1>
+    <p>DOM é a pricipal base do JS</p>
+    <p id="para">aqui esta o seu resultado</p>
+    <div id="botao">click aqui</div>
+    <div class="sbotao">segundo click e teste</div>
+    
+    
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = "blue"
+        var corpo = window.document.body
+        var d = window.document.getElementById("botao")
+        d.style.color = "white"
+        var c = window.document.querySelector("p#para")
+        c.innerText = "noooossa"
+        var n1 = document.querySelector('div.sbotao')
+        n1.style.color = "red"
+        window.document.write('esta equivocado nesta afirmação: ' + p1.innerHTML)
+        /*
+        'ponto' é para class
+        'hastag' é para id
+        
+        */
+
+        /*
+        por marca - getElementByTagName()
+        por id - getElementByid()
+        por nome - getElementByName()
+        por classe - 
+        por seletor - 
+
+        */
+        var s1 = Number(prompt("digite um numero: "))
+        var s2 = Number(prompt("digite outro numero: "))
+        var s3 = (s1 + s2)
+        alert("A soma é: " + s3)
+
+    </script>
+</body>
+</html>
